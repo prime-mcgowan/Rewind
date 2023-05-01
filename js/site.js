@@ -15,10 +15,26 @@ function getString() {
 //userString is a parameter
 function reverseString(userString) {
 
+    let reverseString = []; //declares an empty array
+
+    //for loop to reverse the string
+    for (let index = userString.length -1; index >= 0; index--) {
+        
+        //reverseString will add a letter to itself on every loop
+        reverseString += userString[index];    
+    }
+
+    return reverseString;
+
 }
 
 //Display the reversed string to the user
 //view function
-function displayReversedString() {
+function displayReversedString(reverseString) {
+
+    //display reversed string to the page
+    //use a template literal
+    document.getElementById("msg").innerHTML = ""
+    //show the alert box
 
 }
