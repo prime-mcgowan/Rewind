@@ -117,10 +117,19 @@ function displayReversedString(revString) {
             <div class="col-lg-4 mt-2">
                 <h3>Write a program that shows a string in reverse.</h3>
                 <h5 class="mt-3">1. Retrieve the string from the page</h5>
-                    <p></p>
+                    <p>The getString() function is really setting the stage for the whole application. Right away the alert box is hidden from the user by targeting the HTML element with an ID
+                        of "alert" and adding an "invisible" class to it. Then the user inputted string is accessed using the getElementById method and is assigned the variable userString.
+                        Next, the reverseString(userString) result is assigned to revString. To wrap it up, revString is passed into displayReversedString() function as an argument.</p>
                 <h5>2. Reverse the string</h5>
-                    <p></p>
-                <h5>3. Display the reversed string along with an alert/message to the user</h5>
+                    <p>The reverseString() function is taking in userString as a parameter. An empty array, revString is created to eventually hold the reversed string.
+                       Each character of userString is loooped through, starting from the last letter and ending with the first letter. With each iteration of the loop another letter
+                       is added to revString, the empty array. Once the loop has hit zero it will stop and the revString array will be returned.
+                    </p>
+                <h5>3. Display the reversed string along with an alert/message to the user on the webpage</h5>
+                    <p>The function displayReversedString() takes in the revString array that was generated and through the use of a template literal, displays it to the user on the webpage.
+                       The displaying of the string to the user will happen on the HTML element with the ID of "msg". The alert/msg to the user will also now be visible because the HTML element
+                       with an ID of "alert" has been selected and the "invisible" class was removed. 
+                    </p>
             </div>
         </div>
     </div>
