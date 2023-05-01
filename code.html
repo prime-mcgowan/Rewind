@@ -65,23 +65,62 @@
 <!-- Main Section -->
 <main class="flex-shrink-0">
     <div class="container py-4 px-5 mt-5">
-        <h2 class="border-1 border-bottom border-dark">The Code for Rewind</h2>
+        <h2 class="border-1 border-bottom border-dark">Code for: Rewind</h2>
         <div class="row row-cols-1 row-cols-lg-2">
             <!-- code -->
             <div class="col-lg-8">
                 <pre class="line-numbers">
                     <code class="language-javascript">
-                        function helloWorld() {
-                            alert("Hello World!!");
-                        }
+                       
+// get the string from the page (controller function)
+function getString() {
+
+    document.getElementById("alert").classList.add("invisible") //classList will bring back all the classes on the alert element
+
+    let userString = document.getElementById("userString").value;
+    let revString = reverseString(userString);
+    displayReversedString(revString);
+
+}
+
+// reverse the string (logic function)
+// userString is a parameter
+function reverseString(userString) {
+
+    let revString = []; //declares an empty array
+
+    //for loop to reverse the string
+    for (let index = userString.length -1; index >= 0; index--) {
+        
+        //reverseString will add a letter to itself on every loop starting with the last letter
+        revString += userString[index];    
+    }
+
+    return revString;
+
+}
+
+// display the reversed string to the user (view function)
+function displayReversedString(revString) {
+
+    // display reversed string to the page (using a template literal to do so)
+    document.getElementById("msg").innerHTML = `Your string reversed is: ${revString}`;
+
+    //show the alert box
+    document.getElementById("alert").classList.remove("invisible");
+
+}
                     </code>
                 </pre>
             </div>
             <!-- description of code -->
-            <div class="col-lg-4">
-                <p>The Code is structured in one function.</p>
-                <h5>Hello World</h5>
-                <p>Hello World is a function that displays an alert with a message of "Hello World!!"</p>
+            <div class="col-lg-4 mt-2">
+                <h3>Write a program that shows a string in reverse.</h3>
+                <h5 class="mt-3">1. Retrieve the string from the page</h5>
+                    <p></p>
+                <h5>2. Reverse the string</h5>
+                    <p></p>
+                <h5>3. Display the reversed string along with an alert/message to the user</h5>
             </div>
         </div>
     </div>
