@@ -33,12 +33,13 @@ h1{
     /* color:#DE5859 */
 }
 
-h4{
-    color:#DE5859
+h4 {
+    color:#DE5859;
+    font-weight:bold;
 }
 
 h2, h3, h5, h6{
-    color:var(--primary-color);
+    color:var(--black-color);
 }
 
 span{
@@ -79,6 +80,25 @@ footer .social>a:hover{
 .cssicon{
     color:#2965f1;
 }
+
+.mt-10{
+    margin-top: 10rem;
+}
+
+.my-input{
+    border: 2px solid #A1CAD0;
+}
+
+.form-control:focus {
+    border-color: #A1CAD0;
+    box-shadow: 0 0 0 0.25rem #A1CAD0;
+
+}
+
+.alert-danger{
+    color: #df4d4d;
+}
+
 
 
 
