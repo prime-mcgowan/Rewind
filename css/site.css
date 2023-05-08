@@ -79,7 +79,7 @@ footer .social>a{
 }
 
 footer .social>a:hover{
-    opacity: 0.9;
+    /* opacity: 0.9; */
     color:#F611AE
     /* color: var(--secondary-color); */
 }
