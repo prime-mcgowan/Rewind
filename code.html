@@ -1,76 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="h-100">
-
-
-
-<head>
+  <head>
     <title>Rewind: A Coding Challenge by Laura McGowan</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
 
-    <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
-    <link href="css/site.css" rel="stylesheet">
-    <link href="css/prism.css" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/5db21ba9c6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="css/prism.css" rel="stylesheet" />
 
     <!-- Favicon Link -->
-    <link rel="icon" type="image/png" href="img/pink-thuderbolt.png">
-    
-</head>
+    <link rel="icon" type="image/png" href="img/pink-thuderbolt.png" />
+  </head>
 
-<!-- ensures the body is 100% of the viewport so footer goes to the bottom -->
-<body class="d-flex flex-column h-100"> 
+  <!-- ensures the body is 100% of the viewport so footer goes to the bottom -->
+  <body class="d-flex flex-column h-100">
+    <!-- Nav Section -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand nav-link-custom-brand" href="index.html">
+          <img
+            src="img/pink-thuderbolt.png"
+            class="d-inline-block align-text-top"
+            width="30"
+            heigth="30"
+          />
 
-
-
-<!-- Nav Section -->
-<nav class="navbar navbar-expand-md navbar-dark fixed-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-            
-            <img src="img/pink-thuderbolt.png" class="d-inline-block align-text-top" width="20" heigth="20"/> 
-            
-            
-            Rewind</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          Rewind</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="app.html">The App</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="code.html">The Code</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="https://github.com/prime-mcgowan">Github</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="#">Portfolio</a>
-                </li>
-              
-            </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-md-10">
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="app.html">The App</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-link-custom active"
+                aria-current="page"
+                href="code.html"
+                >The Code</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-link-custom"
+                target="_blank"
+                href="https://github.com/prime-mcgowan"
+                >Github</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" target="_blank" href="#"
+                >Portfolio</a
+              >
+            </li>
+          </ul>
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-<!-- Main Section -->
-<main class="flex-shrink-0">
-    <div class="container py-4 px-5 mt-5">
-        <h2 class="border-1 border-bottom border-dark">Code for: <span>Rewind</span></h2>
+    <!-- Main Section -->
+    <main class="flex-shrink-0">
+      <div class="container py-4 px-5 mt-5">
+        <h2 class="border-1 border-bottom border-dark">
+          Code for: <span>Rewind</span>
+        </h2>
         <div class="row row-cols-1 row-cols-lg-2">
-            <!-- code -->
-            <div class="col-lg-8">
-                <pre class="line-numbers">
+          <!-- code -->
+          <div class="col-lg-8">
+            <pre class="line-numbers">
                     <code class="language-javascript">
                        
 // get the string from the page (controller function)
@@ -113,65 +140,101 @@ function displayReversedString(revString) {
 }
                     </code>
                 </pre>
-            </div>
-            <!-- description of code -->
-            <div class="col-lg-4 mt-2">
-                <h3>Write a program that shows a string in reverse.</h3>
-                <h5 class="mt-3">1. Retrieve the string from the page</h5>
-                    <p>The getString() function is really setting the stage for the whole application. Right away the alert box is hidden from the user by targeting the HTML element with an ID
-                        of "alert" and adding an "invisible" class to it. Then the user inputted string is accessed using the getElementById method and is assigned the variable userString.
-                        Next, the reverseString(userString) result is assigned to revString. To wrap it up, revString is passed into displayReversedString() function as an argument.</p>
-                <h5>2. Reverse the string</h5>
-                    <p>The reverseString() function is taking in userString as a parameter. An empty array, revString is created to eventually hold the reversed string.
-                       Each character of userString is looped through, starting from the last letter and ending with the first letter. With each iteration of the loop another letter
-                       is added to revString, the empty array. Once the loop has hit zero it will stop and the revString array will be returned.
-                    </p>
-                <h5>3. Display the reversed string along with an alert/message to the user on the webpage</h5>
-                    <p>The function displayReversedString() takes in the revString array that was generated and through the use of a template literal, displays it to the user on the webpage.
-                       The displaying of the string to the user will happen on the HTML element with the ID of "msg". The alert/msg to the user will also now be visible because the HTML element
-                       with an ID of "alert" has been selected and the "invisible" class was removed. 
-                    </p>
-            </div>
+          </div>
+          <!-- description of code -->
+          <div class="col-lg-4 mt-2">
+            <h3>Write a program that shows a string in reverse.</h3>
+            <h5 class="mt-3">1. Retrieve the string from the page</h5>
+            <p>
+              The getString() function is really setting the stage for the whole
+              application. Right away the alert box is hidden from the user by
+              targeting the HTML element with an ID of "alert" and adding an
+              "invisible" class to it. Then the user inputted string is accessed
+              using the getElementById method and is assigned the variable
+              userString. Next, the reverseString(userString) result is assigned
+              to revString. To wrap it up, revString is passed into
+              displayReversedString() function as an argument.
+            </p>
+            <h5>2. Reverse the string</h5>
+            <p>
+              The reverseString() function is taking in userString as a
+              parameter. An empty array, revString is created to eventually hold
+              the reversed string. Each character of userString is looped
+              through, starting from the last letter and ending with the first
+              letter. With each iteration of the loop another letter is added to
+              revString, the empty array. Once the loop has hit zero it will
+              stop and the revString array will be returned.
+            </p>
+            <h5>
+              3. Display the reversed string along with an alert/message to the
+              user on the webpage
+            </h5>
+            <p>
+              The function displayReversedString() takes in the revString array
+              that was generated and through the use of a template literal,
+              displays it to the user on the webpage. The displaying of the
+              string to the user will happen on the HTML element with the ID of
+              "msg". The alert/msg to the user will also now be visible because
+              the HTML element with an ID of "alert" has been selected and the
+              "invisible" class was removed.
+            </p>
+          </div>
         </div>
-    </div>
-</main>
+      </div>
+    </main>
 
-<!-- Footer Section -->
-<footer class="footer mt-auto py-3">
-    <div class="container-fluid">
+    <!-- Footer Section -->
+    <footer class="footer mt-auto py-3">
+      <div class="container-fluid">
         <div class="row row-cols-1 row-cols-lg-3 gy-2">
-            <div class="col d-flex align-items-center order-last order-lg-first text-light">
-                <a class="underline" href="mailto:mcgowancodes@gmail.com"><span class="email">mcgowancodes@gmail.com</span></a>
-                <!-- <div><span class="text-muted">&copy;2023</span> | mcgowancodes@gmail.com</div> -->
+          <div
+            class="col d-flex align-items-center order-last order-lg-first text-light"
+          >
+            <a class="underline" href="mailto:mcgowancodes@gmail.com"
+              ><span class="email">mcgowancodes@gmail.com</span></a
+            >
+            <!-- <div><span class="text-muted">&copy;2023</span> | mcgowancodes@gmail.com</div> -->
+          </div>
+          <div
+            class="col d-flex align-items-center justify-content-start justify-content-lg-center"
+          >
+            <img src="img/bright-pink.png" alt="..." height="55" width="300" />
+          </div>
+          <div
+            class="col d-flex align-items-center justify-content-start justify-content-lg-end"
+          >
+            <div class="row">
+              <div class="col social">
+                <a href="https://github.com/prime-mcgowan" target="_blank"
+                  ><i class="fab fa-github fa-2x"></i
+                ></a>
+              </div>
+              <div class="col social">
+                <a href="https://linkedin.com/in/lauraemcgowan" target="_blank"
+                  ><i class="fab fa-linkedin fa-2x"></i
+                ></a>
+              </div>
+              <!-- <div class="col social"><a href="#" target="_blank"><i class="fab fa-google fa-2x"></i></a></div> -->
             </div>
-            <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
-                <img src="img/bright-pink.png" alt="..." height="55" width="300">
-            </div>
-            <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
-                <div class="row">
-                    <div class="col social"><a href="https://github.com/prime-mcgowan" target="_blank"><i class="fab fa-github fa-2x"></i></a></div>
-                    <div class="col social"><a href="https://linkedin.com/in/lauraemcgowan" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></div>
-                    <!-- <div class="col social"><a href="#" target="_blank"><i class="fab fa-google fa-2x"></i></a></div> -->
-
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
-</script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
 
-<script src="js/prism.js">
-    Prism.plugins.NormalizeWhitespace.setDefaults({
-        'remove-trailing': true,
-        'remove-indent': true,
-        'left-trim': true,
-        'right-trim': true
-})
-</script>
-
-</body>
+    <script src="js/prism.js">
+          Prism.plugins.NormalizeWhitespace.setDefaults({
+              'remove-trailing': true,
+              'remove-indent': true,
+              'left-trim': true,
+              'right-trim': true
+      })
+    </script>
+  </body>
 </html>
