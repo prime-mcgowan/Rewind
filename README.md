@@ -19,8 +19,7 @@ Rewind is a simple web application that takes in a user-inputted string, reverse
 
 ## Getting Started
 
-- Clone or download the project repository.
-
+1. Clone or download the project repository.
 2. Open the index.html file in a web browser.
 3. Enter a string in the input field and click the "Reverse" button.
 4. The reversed string will be displayed on the webpage, and an alert will pop up with the reversed string.
