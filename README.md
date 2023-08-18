@@ -14,7 +14,7 @@ Rewind is a simple web application that takes in a user-inputted string, reverse
 ## Technologies Used
 
 HTML,
-,CSS (Bootstrap framework)
+CSS (Bootstrap framework)
 and JavaScript
 
 ## Getting Started
